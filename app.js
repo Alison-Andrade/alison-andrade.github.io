@@ -13,3 +13,13 @@ window.onscroll = () => {
         navbar.classList.remove('sticky')
     }
 }
+
+setInterval(() => {
+    const preload = document.querySelector('.preload')
+    preload.classList.add('preload-finish')
+}, 2100)
+
+// window.addEventListener('load', () => {
+//     const preload = document.querySelector('.preload')
+//     preload.classList.add('preload-finish')
+// })
