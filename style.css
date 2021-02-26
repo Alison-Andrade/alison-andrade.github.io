@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+body::-webkit-scrollbar {
+    width: 11px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(34, 34, 34);
+}
+
+body::-webkit-scrollbar-track {
+    background-color: rgb(245, 245, 245);
+}
+
+p {
+    margin-top: 1rem;
+}
+
+hr {
+    width: 100%;
+    margin-top: 0.7rem;
+    margin-bottom: 0.5rem;
+}
+
+.menu {
+    position: fixed;
+    width: 100%;
+    min-height: 15vh;
+    background-color: rgb(34, 34, 34);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* padding: 1rem; */
+    z-index: 5;
+}
+
+.logo svg {
+    height: 3rem;
+    width: 6rem;
+    fill: rgb(245, 245, 245);
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    /* width: 33%; */
+}
+
+.nav-links li {
+    margin-right: 2rem;
+    list-style: none;
+}
+
+.nav-links a {
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+section {
+    padding-top: 15vh;
+    height: 100vh;
+}
+
+#welcome-section {
+    background-color: rgb(24, 24, 24);
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#welcome-section p {
+    font-size: 1.6rem;
+}
+
+.welcome-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 33%;
+    margin-top: 3rem;
+}
+
+.footer-note {
+    font-size: 1.3rem;
+    color: rgb(95, 95, 95);
+}
+
+.languages {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 25%;
+}
+
+.languages img {
+    width: 2rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.languages img:hover {
+    transform: scale(1.15);
+}
+
+#projects {
+    background-color: rgb(245, 245, 245);
+    height: 100%;
+    padding: 18vh 3rem 18vh 3rem;
+}
+
+.project-tile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card {
+    width: 23rem;
+    display: block;
+    background-color: rgb(34, 34, 34);
+    color: rgb(224, 224, 224);
+    margin-top: 3rem;
+    border-radius: 0.4rem;
+}
+
+.card img {
+    width: 100%;
+    height: 15rem;
+    border-radius: 0.1rem;
+}
+
+.card-footer {
+    padding: 2rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.card-footer h4 {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+.card-footer p {
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.card-tech {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
+}
+
+.card-tech img {
+    width: 4rem;
+    height: 1.5rem;
+    border-radius: 0;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+.sause {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.project-links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0.5rem;
+    width: 50%;
+}
+
+.project-links figure {
+    padding: 0.2rem;
+    border: 1px solid rgb(68, 68, 68);
+    border-radius: 3px;
+    background-color: rgb(44, 44, 44);
+}
+
+.project-links a {
+    font-size: 0.8rem;
+    color: rgb(245, 245, 245);
+    text-decoration: none;
+}
+
+.project-links img {
+    width: 3rem;
+    height: 3rem;
+}
+
+#contacts {
+    background-color: rgb(24, 24, 24);
+    font-size: 1.2rem;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    padding-top: 5rem;
+}
+
+.social {
+    transition: transform 0.3s ease-out;
+}
+
+.social:hover {
+    transform: translateY(-10px);
+}
+
+.social a {
+    display: flex;
+    align-items: center;
+    color: rgb(245, 245, 245);
+    text-decoration: none;
+}
+
+.social h4 {
+    margin-left: 1rem;
+}
+
+.social svg {
+    fill: rgb(245, 245, 245);
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.even {
+    color: rgb(245, 245, 245);
+}
+
+.gray-wave {
+    height: 15vh;
+    background: url('https://raw.githubusercontent.com/Alison-Andrade/freeCodeCamp-portfolio/master/image/gray-wave.png');
+    background-position: top center;
+    background-size: 100% 100%;
+    background-color: rgb(24, 24, 24);
+}
+
+.black-wave {
+    height: 15vh;
+    background: url('https://raw.githubusercontent.com/Alison-Andrade/freeCodeCamp-portfolio/master/image/gray-wave-2.png');
+    background-position: top center;
+    background-size: 100% 100%;
+    background-color: rgb(24, 24, 24);
+}
+
+@media screen and (min-width: 1024px) {
+    html {
+        font-size: 110%;
+    }
+}
+
+@media screen and (max-width: 968px) {
+    .social a {
+        flex-direction: column;
+    }
+
+    .social h4 {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        position: inherit;
+        height: 30vh;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 15vh;
+    }
+
+    .logo svg {
+        height: 4rem;
+    }
+
+    .navbar {
+        background-color: rgb(34, 34, 34);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 15vh;
+        width: 100%;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .nav-links li {
+        margin-right: 0;
+        list-style: none;
+    }
+
+    .nav-links a {
+        color: rgb(226, 226, 226);
+        text-decoration: none;
+        letter-spacing: 2px;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+    #welcome-section {
+        height: 100vh;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    #welcome-section h1 {
+        margin-top: -3rem;
+    }
+
+    #welcome-section p {
+        margin-top: 5rem;
+    }
+
+    .footer-note {
+        bottom: -1rem;
+    }
+
+    .languages {
+        bottom: -4rem;
+        width: 80%;
+    }
+
+    .project-links {
+        width: 70%;
+    }
+
+    .contact-icons {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 3rem;
+        height: 80%;
+        position: relative;
+        transform: translateX(-50%);
+        left: 50%;
+    }
+
+    .social a {
+        flex-direction: row;
+    }
+
+    .social h4 {
+        margin-left: 1rem;
+    }
+
+    #contacts {
+        height: 73vh;
+        text-align: center;
+    }
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+.sticky + .content {
+    padding-top: 60px;
+}
