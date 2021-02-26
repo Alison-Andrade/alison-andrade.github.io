@@ -38,7 +38,7 @@ body::-webkit-scrollbar-track {
     height: 100px;
     width: 100px;
     position: relative;
-    transform: scale(2);
+    /* transform: scale(1.5); */
 }
 
 .circular .inner {
@@ -57,7 +57,7 @@ body::-webkit-scrollbar-track {
     position: absolute;
     height: 100%;
     width: 100%;
-    background: rgb(24, 24, 24);
+    /* background: rgb(24, 24, 24); */
     border-radius: 100%;
     -webkit-border-radius: 100%;
     clip: rect(0px, 100px, 100px, 50px);
@@ -200,10 +200,19 @@ section {
 
 .languages img {
     width: 2rem;
+    height: 2rem;
     transition: all 0.2s ease-in-out;
 }
 
-.languages img:hover {
+/* .languages img:hover {
+    transform: scale(1.15);
+} */
+
+.lang-fig {
+    font-size: 0.5rem;
+}
+
+.lang-fig:hover {
     transform: scale(1.15);
 }
 
