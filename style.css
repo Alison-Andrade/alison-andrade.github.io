@@ -86,7 +86,7 @@ section {
     font-size: 1.6rem;
 }
 
-.welcome-footer {
+#welcome-footer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -96,7 +96,7 @@ section {
     margin-top: 3rem;
 }
 
-.footer-note {
+#welcome-footer p {
     font-size: 1.3rem;
     color: rgb(95, 95, 95);
 }
